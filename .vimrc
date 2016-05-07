@@ -3,6 +3,8 @@ let mapleader=";"
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+set tabstop=4
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -26,6 +28,7 @@ let g:airline#extensions#syntastic#enabled = 1
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 
 set background=dark
+set t_Co=256
 colorscheme molokai
 
 set laststatus=2
